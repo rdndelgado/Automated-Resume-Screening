@@ -4,7 +4,6 @@ gensim
 scikit-learn
 joblib
 spacy
-streamlit
+streamlit==1.29.0
 os
-streamlit
 spacy
