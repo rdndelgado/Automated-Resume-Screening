@@ -45,7 +45,7 @@ def main():
             pre_processed_resumes.append(pr.text_cleaning(pr.pdf_to_text(open(file))))
 
         extracted_features = []
-        nlp = spacy.load('ner_model')
+        nlp = spacy.load(Path('ner_model'))
 
         for text in pre_processed_resumes:
             doc = nlp(text)
