@@ -101,7 +101,7 @@ def main():
                 pre_processed_resumes.append(pr.text_cleaning(pr.pdf_to_text(open(file))))
 
             extracted_features = []
-            ner = Path('\\ner_model')
+            ner = Path('ner_model')
             nlp = spacy.load(ner)
 
             global features
