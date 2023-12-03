@@ -102,7 +102,7 @@ def main():
 
             extracted_features = []
             ner = Path('ner_model')
-            nlp = spacy.load(ner)
+            nlp = spacy.load(ner, disable=['parser', 'tagger'])
 
             global features
 
